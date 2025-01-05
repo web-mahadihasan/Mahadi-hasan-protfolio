@@ -12,9 +12,9 @@ const MobileMenuAside = () => {
 
     const navLinks = [
         { "path": "/", "element": "Home" },
-        { "path": "/rooms", "element": "Rooms" },
-        { "path": "/my-bookings", "element": "My Bookings" },
-        { "path": "/about-us", "element": "About Us" },
+        { "path": "/rooms", "element": "Skills" },
+        { "path": "/my-bookings", "element": "Experience" },
+        { "path": "/about-us", "element": "About me" },
         { "path": "/contact", "element": "Contact" }
       ]
     return (
@@ -58,8 +58,8 @@ const MobileMenuAside = () => {
                             <LuPhoneCall size={28} className="text-primary"/>
                         </div>
                         <div>
-                            <p className="font-medium text-base">To More Inquery</p>
-                            <h4 className="text-primary font-semibold text-lg">+1962454121</h4>
+                            <p className="font-medium text-base">More Inquery</p>
+                            <h4 className="text-primary font-semibold text-lg">+8801794943980</h4>
                         </div>
                     </div>
                 </div>
