@@ -4,8 +4,8 @@ import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 const Banner = () => {
     return (
         <div className="bg-[#1f242d] dark:[#1f242d]">
-            <div className="max-w-7xl mx-auto px-4 xl:px-0 py-24 flex items-center justify-between gap-8">
-                <div className="flex-1">
+            <div className="max-w-7xl mx-auto px-4 xl:px-0 py-24 flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div className="flex-1 order-2 lg:order-1">
                     <p className="text-2xl font-jost font-semibold">Hi 👋, I&apos;m Mahadi Hasan  </p>
                     <h1 className="text-6xl flex flex-col gap-2 font-extrabold font-rubik text-primary-black my-8">
                         <span className="text-white">A Creative </span>
@@ -32,8 +32,8 @@ const Banner = () => {
                         </a>
                 </div>
                 </div>
-                <div className="flex-1 justify-end">
-                    <div className="w-[32vw] h-[32vw] bg-[#1f242d] rounded-full p-[5px] img-box relative flex items-center justify-center overflow-hidden">
+                <div className="flex-1 justify-end w-full order-1 lg:order-2">
+                    <div className="w-full h-[400px] md:w-[32vw] md:h-[32vw] bg-[#1f242d] rounded-full p-[5px] img-box relative flex items-center justify-center overflow-hidden">
                         <div className="w-full h-full bg-[#1f242d] rounded-full relative flex justify-center overflow-hidden z-50 border border-[#1f242d]">
                             <img src="https://i.ibb.co.com/YQPxhFr/banner-me1.png" alt="" className="absolute z-50 mix-blend-lighten top-7 block w-[85%] object-cover"/>
                         </div>
