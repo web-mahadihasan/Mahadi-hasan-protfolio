@@ -5,25 +5,25 @@ import { TiWeatherSunny } from "react-icons/ti";
 import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
-
+    
     const navLinks = <>
-        <li> <NavLink to={"/"}>Home</NavLink> </li>
-        <li><NavLink to={"/rooms"}>Skills</NavLink></li>
-        <li><NavLink to={"/my-bookings"}>Experience</NavLink></li>
-        <li><NavLink to={"/about-us"}>About me</NavLink></li>
-        <li><NavLink to={"/contact-us"}>Contact</NavLink></li>
+        <li className="navlink relative"> <NavLink to={"/"}>Home</NavLink> </li>
+        <li className="navlink relative"><NavLink to={"/rooms"}>Skills</NavLink></li>
+        <li className="navlink relative"><NavLink to={"/my-bookings"}>Experience</NavLink></li>
+        <li className="navlink relative"><NavLink to={"/about-us"}>About me</NavLink></li>
+        <li className="navlink relative"><NavLink to={"/contact-us"}>Contact</NavLink></li>
     </>
     return (
         <div className="py-3 border-b shadow">
-            <div className="container mx-auto px-4 xl:px-0 flex items-center justify-between">
+            <div className="max-w-7xl mx-auto px-4 xl:px-0 flex items-center justify-between gap-6">
                 {/* Logo  */}
                 <div>
-                    <Link to={"/"} className=" text-3xl font-bold">Mahadi</Link>
+                    <Link to={"/"} className=" text-4xl font-bold font-rubik tracking-wider text-primary">Mahadi</Link>
                 </div>
 
                 {/* Nav links  */}
-                <div className="hidden lg:block">
-                    <ul className="flex uppercase items-center text-sm font-medium text-secondary-black gap-4 space-x-6 border p-2 px-6 rounded-full">
+                <div className="hidden lg:block flex-1">
+                    <ul className="flex w-fit mx-auto uppercase items-center text-sm text-secondary-black gap-4 space-x-6 border p-2 px-6 rounded-full border-gray-700 backdrop-blur-xl font-rubik tracking-wider">
                         {navLinks}
                     </ul>
                     
@@ -34,7 +34,7 @@ const Navbar = () => {
                         <span><TiWeatherSunny size={24}/></span>
                         <span><PiMoonThin size={24}/></span>
                     </div>
-                    <Link to={"/"}><button className="px-5 py-1.5 bg-primary text-white rounded-full shadow-xl border border-primary hover:bg-secondary-black hover:border-secondary-black duration-500 tracking-wide flex items-center gap-2">Resume <span><FiDownload /></span></button></Link>
+                    <Link to={"/"}><button className="px-5 font-rubik tracking-wide py-2 text-sm bg-primary text-primary-black uppercase font-semibold rounded-full shadow-xl border border-primary hover:bg-secondary-black hover:border-secondary-black duration-500 flex items-center gap-2">Resume <span><FiDownload size={16}/></span></button></Link>
                     <div className="lg:hidden"><HiMenu size={30} /></div>
                     <aside>
                         {/* <MobileMenuAside/> */}
