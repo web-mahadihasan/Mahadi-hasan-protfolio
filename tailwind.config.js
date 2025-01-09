@@ -14,8 +14,11 @@ export default {
           DEFAULT: '#7cf03d',
           dark: '#2b4ac3'
         },
+        'title-black': "#212529",
         'primary-black': "#05264e",
-      }
+        'light-black': "#4f5e64",
+        'dark-black': "#A6ADBB",
+      },
     },
   },
   plugins: [daisyui],

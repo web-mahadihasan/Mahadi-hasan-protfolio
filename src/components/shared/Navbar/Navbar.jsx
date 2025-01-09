@@ -23,7 +23,7 @@ const Navbar = () => {
 
                 {/* Nav links  */}
                 <div className="hidden lg:block flex-1">
-                    <ul className="flex w-fit mx-auto uppercase items-center text-sm text-secondary-black gap-4 space-x-6 border p-2 px-6 rounded-full border-gray-700 backdrop-blur-xl font-rubik tracking-wider">
+                    <ul className="nav-menu flex w-fit mx-auto uppercase items-center text-sm text-secondary-black gap-4 space-x-6 border p-2 px-6 rounded-full border-gray-700 backdrop-blur-xl font-rubik tracking-wider">
                         {navLinks}
                     </ul>
                     

@@ -7,10 +7,20 @@
     font-family: "Jost", serif;
 }
 
-a.active{
+.nav-menu a.active{
     color: #7cf03d;
     font-weight: 700;
 }
+/* .tabs a.active {
+    background: linear-gradient(to right, #7cf03d 0%, #7cf03d 100%);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.tabs a:hover {
+    background-position: right;
+} */
 .navlink:after{
     content: "";
     display: block;
@@ -52,3 +62,62 @@ a.active{
         transform: rotate(360deg);
     }
 }
+
+.tabs {
+    display: flex;
+    position: relative;
+    padding: 2px;
+  }
+  
+  .tabs a {
+    flex: 1;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    /* color: #000; */
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .tabs a.active {
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .bg-runner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #7cf03d;
+    z-index: 1;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .skill-border-beam::after{
+    /* content: "";
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 20px; */
+    top: 0px;
+    left: 0px;
+    transform-origin: bottom right;
+    /* bottom: 20px; */
+    /* left: 20px;
+    z-index: -1; */
+    animation: border-beam 8s linear infinite;
+  }
+  @keyframes border-beam {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+  }
+  

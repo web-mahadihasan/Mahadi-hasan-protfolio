@@ -11,7 +11,7 @@ const Banner = () => {
                         <span className="text-white">A Creative </span>
                         <span style={{ WebkitTextStroke: '1px #7cf03d', color: 'transparent' }}>Frontend Developer</span>
                     </h1>
-                    <p className="font-jost text-xl my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, molestias. Lorem ipsum dolor sit amet.</p>
+                    <p className="font-jost text-xl my-4">A Creative Frontend Developer turning ideas into engaging digital experiences with style and precision. Let’s build something remarkable!</p>
                     <div className="flex items-center gap-6 my-6">
                         {/* <button>Hire Me</button> */}
                         <button className="px-5 font-rubik tracking-wide py-2.5 text-sm bg-transparent border-primary text-primary  uppercase font-semibold rounded-full shadow-xl border hover:bg-primary hover:text-primary-black duration-500 ease-in-out flex items-center gap-2">Hire me <span></span></button>
