@@ -68,6 +68,10 @@ const Education = () => {
             </div>             */}
             
             <section className="text-gray-600 body-font">
+                <div className="max-w-2xl mx-auto text-center mt-16">
+                    <h3 className="text-3xl font-rubik font-medium my-4 text-white/65">My Educational Journey</h3>
+                    <p className="text-lg mb-6 font-jost text-dark-black">A summary of my formal education and key experiences that have shaped my knowledge in technology and development, fueling my ongoing growth and passion for learning.</p>
+                </div>
                 <div className="max-w-5xl px-5 py-24 mx-auto flex flex-wrap">
                     <div className=" w-full">
                     <div className="">
@@ -79,7 +83,7 @@ const Education = () => {
                             1
                         </div>
                         <div className="flex-grow pl-4">
-                            <h4 className="text-xl font-semibold font-rubik sm:text-base text-white/80">
+                            <h4 className="text-2xl tracking-wide font-semibold font-rubik sm:text-base text-white/80">
                                 Bachelor of Science(BSc)
                             </h4>
                             <h4 className="text-xl font-semibold sm:text-base font-jost text-white/65">
@@ -105,7 +109,7 @@ const Education = () => {
                             2
                         </div>
                         <div className="flex-grow pl-4">
-                        <h4 className="text-xl font-semibold font-rubik sm:text-base text-white/80">
+                        <h4 className="text-2xl tracking-wide font-semibold font-rubik sm:text-base text-white/80">
                                 Higher Secondary Education(HSC)
                             </h4>
                             <h4 className="text-xl font-semibold sm:text-base font-jost text-white/65">

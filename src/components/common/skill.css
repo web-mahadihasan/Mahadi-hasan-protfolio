@@ -1,0 +1,59 @@
+.media-object {
+    --border-width: 1px;
+    --radius: 24px;
+    --color1: #23282f;
+    --color4: #23282f;
+    --color2: #FDDA0D;
+    --color3: #FDDA0D;
+  
+    position: relative;
+    /* border-radius: var(--radius); */
+    border: var(--border-width) solid transparent;
+  }
+
+  /* for transparet border  
+  --color1: #381D6A;
+  --color4: #381D6A; */
+
+  .media-object::before {
+    content: " ";
+    position: absolute;
+    inset: calc(var(--border-width) * -1);
+    z-index: -1;
+    border: inherit;
+    /* border-radius: inherit; */
+    background-image: conic-gradient(from var(--angle, 0deg), var(--color1, #23282f) 50%, var(--color2, #FDDA0D) 88%, var(--color3, #FDDA0D) 95%, var(--color4, #23282f) 100%);
+    background-origin: border-box;
+    -webkit-mask:
+      linear-gradient(black, black) content-box,
+      linear-gradient(black, black);  
+    mask: linear-gradient(black, black),
+          linear-gradient(black, black);
+    -webkit-mask-clip: content-box, border-box;  
+    mask-clip: content-box, border-box;
+    -webkit-mask-composite: xor;  
+    mask-composite: exclude;
+    animation: spin 8s linear infinite;
+  }
+  
+  @supports not (background: paint(something)) {
+    .media-object::before {
+        background-image: conic-gradient(from 90deg, var(--color1) 50%, var(--color2) 88%, var(--color3) 92%, var(--color4) 100%);    }
+  }
+  
+  .media-object:hover::before {
+    animation-play-state: paused;
+  }
+  
+  @property --angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+  
+  @keyframes spin {
+    to {
+      --angle: 1turn;
+    }
+  }
+  
