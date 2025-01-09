@@ -5,7 +5,7 @@ import Tabs from "./Tabs";
 import { useState } from "react";
 import PersonalInfo from "./PersonalInfo";
 import Education from "./Education";
-import Skills from "./Skills";
+import MySkills from "./MySkills";
 
 const Home = () => {
     const [tabsBody, setTabsBody] = useState(0)
@@ -28,7 +28,7 @@ const Home = () => {
                 <div>
                     {tabsBody ===  0 && <PersonalInfo/>}
                     {tabsBody ===  1 && <Education/>}
-                    {tabsBody ===  2 && <Skills/>}
+                    {tabsBody ===  2 && <MySkills/>}
                 </div>
                 
             </section>
