@@ -25,7 +25,9 @@ const Skills = () => {
         className="max-w-7xl mx-auto px-4 xl:px-0 my-16" 
         >   
             <div className="max-w-2xl mx-auto text-center">
-                <h3 className="text-3xl font-rubik font-medium my-4 text-white/65">My Core Skills, My Vision</h3>
+                <h3 className="text-3xl font-rubik font-medium my-4 text-white/65">
+                    My Core  <span className="text-primary mx-2">{"<"}<span >Skills</span>{"/>"}</span>, My Vision
+                </h3>
                 <p className="text-lg mb-6 font-jost text-dark-black">A display of my core competencies and the tools that fuel my growth, reflecting my journey in mastering technology and development. These skills empower my creativity and innovation in every endeavor.</p>
             </div>
 

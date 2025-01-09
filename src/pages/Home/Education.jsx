@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
     return (
@@ -8,68 +9,13 @@ const Education = () => {
         exit={{ opacity: 0, y: 100 }}   
         transition={{ duration: 0.5 }} 
         >
-            {/* <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-                <div className="grid max-w-2xl mx-auto">
-                    <div className="flex">
-                    <div className="flex flex-col items-center mr-6">
-                        <div className="w-px h-10 opacity-0 sm:h-full" />
-                        <div>
-                        <div className="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                            1
-                        </div>
-                        </div>
-                        <div className="w-px h-full bg-gray-300" />
-                    </div>
-                    <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-                        <div className="mt-6">
-                            <h4 className="text-xl font-semibold font-rubik sm:text-base">
-                                Bachelor of Science(BSc)
-                            </h4>
-                            <h4 className="text-xl font-semibold sm:text-base font-jost">
-                                Prime University
-                            </h4>
-                            <p className="text-sm text-gray-600 font-jost">2019 - 2023</p>
-                            <p className="text-sm text-gray-700">
-                                Successfully completed a Bachelor of Science degree, focusing on Computer Science and Engineering. 
-                                Gained in-depth knowledge and practical experience in key areas such as programming, data structures & Algorithm, software engineering, system design.
-                            </p>
-                            <p>Key Achievements:</p>
-                            <ul className="list-disc list-inside ml-6 mb-8">
-                                <li>Consistently maintained strong academic performance.</li>
-                                <li>Developed a solid foundation in problem-solving, critical thinking, and teamwork.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div className="flex">
-                    <div className="flex flex-col items-center mr-6">
-                        <div className="w-px h-10 bg-gray-300 sm:h-full" />
-                        <div>
-                        <div className="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                            2
-                        </div>
-                        </div>
-                        <div className="w-px h-full bg-gray-300" />
-                    </div>
-                    <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-                        <div>
-                        <p className="text-xl font-semibold sm:text-base">Heart attack</p>
-                        <p className="text-sm text-gray-700">
-                            A flower in my garden, a mystery in my panties. Heart attack
-                            never stopped old Big Bear. I didn't even know we were calling
-                            him Big Bear.
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-
-                </div>
-            </div>             */}
-            
             <section className="text-gray-600 body-font">
                 <div className="max-w-2xl mx-auto text-center mt-16">
-                    <h3 className="text-3xl font-rubik font-medium my-4 text-white/65">My Educational Journey</h3>
+                    <h3 className="text-3xl font-rubik font-medium my-4 text-white/65 flex items-center gap-2 justify-center">
+                        <FaGraduationCap size={40} className="text-primary"/>
+                        {/* <svg aria-hidden="true" className="e-font-icon-svg e-fas-university" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#7cf03d" width={'36px'}><path d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"></path></svg> */}
+                        My <span className="text-primary">Educational</span> Journey
+                    </h3>
                     <p className="text-lg mb-6 font-jost text-dark-black">A summary of my formal education and key experiences that have shaped my knowledge in technology and development, fueling my ongoing growth and passion for learning.</p>
                 </div>
                 <div className="max-w-5xl px-5 py-24 mx-auto flex flex-wrap">

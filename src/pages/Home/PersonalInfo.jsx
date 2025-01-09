@@ -8,7 +8,7 @@ const PersonalInfo = () => {
         animate={{ opacity: 1, y: 0 }}  
         exit={{ opacity: 0, y: 100 }}   
         transition={{ duration: 0.5 }} 
-        className="bg-[#2b323e] p-8 rounded-lg shadow-lg backdrop-blur-2xl">
+        className="bg-[#2b323e] p-8 rounded-lg shadow-lg backdrop-blur-2xl mt-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 min-h-[400px]">
                 <div className="flex-1 relative h-full" >
                     <img src="https://i.ibb.co.com/cc6pX7b/banner-me.png" alt="" className="w-full max-h-[400px] object-cover z-40"/>
@@ -16,7 +16,7 @@ const PersonalInfo = () => {
                 </div>
                 <div className="flex-1">
                     <h3 className="text-3xl font-medium font-rubik text-white/80">Personal Info</h3>
-                    <p className="font-jost text-lg my-4 text-dark-black max-w-5xl mx-auto">As a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+                    <p className="font-jost text-lg my-4 text-dark-black max-w-5xl mx-auto">As a professional <span className="text-primary">MERN Stack Developer</span>, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="p-4 bg-[#1f242d] rounded-md">
                             <p className="font-rubik text-lg text-dark-black">Email</p>
