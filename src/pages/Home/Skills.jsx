@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import Skill from "../../components/common/skill";
 import SkillTopAnimation from "../../components/common/skillTopAnimation";
+import SkillCard from "../../components/common/SkillCard";
 // import react from "../../assets/icons/react.svg"
 
 const Skills = () => {
@@ -37,15 +37,14 @@ const Skills = () => {
             </div>
 
            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-16 justify-center place-items-center mt-8">
-            <Skill color={'#FDDA0D'} icon={js} iconBg={'rgb(0, 0, 0)'} viewBox={'0 0 24 24'}/>
-            <Skill color={'#11DBF2'} icon={react} iconBg={'rgb(0, 0, 0)'} viewBox={'0 0 24 24'}/>
-            {/* <Skill color={'#fff'} icon={next} iconBg={'#fff'} viewBox={'0 0 24 24'}/> */}
-            <Skill color={'#0000FF'} icon={tailwind} iconBg={'#000'} viewBox={'0 0 24 24'}/>
-            <Skill color={'#4A8C44'} icon={node} iconBg={'#000'} viewBox={'0 0 24 24'}/>
-            <Skill color={'#fff'} icon={express} iconBg={'#000'} viewBox={'0 0 24 24'}/>
-            <Skill color={'#086D50'} icon={mongoDB} iconBg={'#000'} viewBox={'0 0 24 24'}/>
-            <Skill color={'#FDDA0E'} icon={firebase} iconBg={'#000'} viewBox={'0 0 512 512'}/>
-            <Skill color={'#000'} icon={github} iconBg={'#fff'} viewBox={'0 0 448 512'}/>
+            <SkillCard color={'#FDDA0D'} icon={js} iconBg={'rgb(0, 0, 0)'} viewBox={'0 0 24 24'}/>
+            <SkillCard color={'#11DBF2'} icon={react} iconBg={'rgb(0, 0, 0)'} viewBox={'0 0 24 24'}/>
+            <SkillCard color={'#0000FF'} icon={tailwind} iconBg={'#000'} viewBox={'0 0 24 24'}/>
+            <SkillCard color={'#4A8C44'} icon={node} iconBg={'#000'} viewBox={'0 0 24 24'}/>
+            <SkillCard color={'#fff'} icon={express} iconBg={'#000'} viewBox={'0 0 24 24'}/>
+            <SkillCard color={'#086D50'} icon={mongoDB} iconBg={'#000'} viewBox={'0 0 24 24'}/>
+            <SkillCard color={'#FDDA0E'} icon={firebase} iconBg={'#000'} viewBox={'0 0 512 512'}/>
+            <SkillCard color={'#000'} icon={github} iconBg={'#fff'} viewBox={'0 0 448 512'}/>
             {/* {
                 icons.map((icon, idx) =>  <Skill key={idx} color={icon.color} icon={icon.name} icon-bg={icon.iconBg} viewBox={icon.viewBox}/>)
             } */}
@@ -53,9 +52,9 @@ const Skills = () => {
            <div className="text-center mt-16">
                 <h3 className="max-w-2xl ml-6 text-3xl font-rubik font-medium my-4 text-white/65">Technologies I&apos;m Currently Exploring</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-16 justify-center place-items-center mt-8">
-                    <Skill color={'#fff'} icon={next} iconBg={'#fff'} viewBox={'0 0 24 24'}/>
-                    <Skill color={'#0B7ECE'} icon={typeScript} iconBg={'#fff'} viewBox={'0 0 24 24'}/>
-                    <Skill color={'#8348CF'} icon={redux} iconBg={'#fff'} viewBox={'0 0 24 24'}/>
+                    <SkillCard color={'#fff'} icon={next} iconBg={'#fff'} viewBox={'0 0 24 24'}/>
+                    <SkillCard color={'#0B7ECE'} icon={typeScript} iconBg={'#fff'} viewBox={'0 0 24 24'}/>
+                    <SkillCard color={'#8348CF'} icon={redux} iconBg={'#fff'} viewBox={'0 0 24 24'}/>
                 </div>
             </div>
         </motion.div>

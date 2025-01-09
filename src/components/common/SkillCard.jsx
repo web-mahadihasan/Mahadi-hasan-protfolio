@@ -1,7 +1,7 @@
 import "./skill.css"
 
 
-const Skill = ({color, icon, iconBg, viewBox}) => {
+const SkillCard = ({color, icon, iconBg, viewBox}) => {
     console.log(icon)
   return (
         <div className="relative p-6">
@@ -52,4 +52,4 @@ const Skill = ({color, icon, iconBg, viewBox}) => {
   )
 };
 
-export default Skill;
+export default SkillCard;
