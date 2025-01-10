@@ -11,10 +11,10 @@ const Router = createBrowserRouter([
                 path: "/",
                 element: <Home/>,
                 loader: async() =>  {
-                    const res = await fetch("http://localhost:3000/portfolio-project")
+                    const res = await fetch("https://mahadi-portfolio-server.vercel.app/portfolio-project")
                     const allProject = await res.json()
                     
-                    const upcommingRes = await fetch("http://localhost:3000/upcomming-project")
+                    const upcommingRes = await fetch("https://mahadi-portfolio-server.vercel.app/upcomming-project")
                     const upcommingProject = await upcommingRes.json()
                     return {allProject, upcommingProject}
 
