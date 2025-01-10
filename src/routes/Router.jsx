@@ -10,7 +10,15 @@ const Router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home/>,
-                loader: () =>  fetch("http://localhost:3000/portfolio-project")
+                loader: async() =>  {
+                    const res = await fetch("http://localhost:3000/portfolio-project")
+                    const allProject = await res.json()
+                    
+                    const upcommingRes = await fetch("http://localhost:3000/upcomming-project")
+                    const upcommingProject = await upcommingRes.json()
+                    return {allProject, upcommingProject}
+
+                } 
             }
         ]
     }

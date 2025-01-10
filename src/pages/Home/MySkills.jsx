@@ -25,7 +25,7 @@ const MySkills = () => {
         className="max-w-7xl mx-auto px-4 xl:px-0 my-16" 
         >   
             <div className="max-w-2xl mx-auto text-center">
-                <h3 className="text-3xl font-rubik font-medium my-4 text-white/65">
+                <h3 className="text-2xl md:text-3xl font-rubik font-medium my-4 text-white/65">
                     My Core  <span className="text-primary mx-2">{"<"}<span >Skills</span>{"/>"}</span>, My Vision
                 </h3>
                 <p className="text-lg mb-6 font-jost text-dark-black">A display of my core competencies and the tools that fuel my growth, reflecting my journey in mastering technology and development. These skills empower my creativity and innovation in every endeavor.</p>
@@ -50,7 +50,7 @@ const MySkills = () => {
             } */}
            </div>
            <div className="text-center mt-16">
-                <h3 className="max-w-2xl ml-6 text-3xl font-rubik font-medium my-4 text-white/65">Technologies I&apos;m Currently Exploring</h3>
+                <h3 className="max-w-2xl ml-6 text-2xl md:text-3xl font-raison font-medium my-4 text-white/65">Technologies I&apos;m Currently Exploring</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-16 justify-center place-items-center mt-8">
                     <SkillCard color={'#fff'} icon={next} iconBg={'#fff'} viewBox={'0 0 24 24'}/>
                     <SkillCard color={'#0B7ECE'} icon={typeScript} iconBg={'#fff'} viewBox={'0 0 24 24'}/>

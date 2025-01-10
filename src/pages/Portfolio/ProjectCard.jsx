@@ -25,13 +25,13 @@ const ProjectCard = ({ projectData, idx }) => {
 
   return (
     <div className="max-w-7xl mx-auto pt-10 px-4 xl:px-0">
-      <div className=" media-object"
+      <div className=" media-object "
             style={{
                 "--color2": color,
                 "--color3": color,
               }}
         >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center h-full  lg:max-h-[500px] p-6 rounded-lg porfolioCarousel-shadow bg-[#1f242d]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center h-full lg:max-h-[500px] p-6 rounded-lg porfolioCarousel-shadow bg-[#1f242d]">
         {/* Left Section */}
         <div className="space-y-6 order-2 md:order-1">
           <h1 className="text-6xl flex flex-col gap-2 font-semibold font-rubik text-primary-black my-8">
@@ -101,22 +101,24 @@ const ProjectCard = ({ projectData, idx }) => {
         </div>
 
         {/* Right Section (Image with Scroll on Hover) */}
-        <div className="h-[400px] overflow-hidden rounded-lg group cursor-pointer order-1 md:order-2">
-         {
-          img && <><img
-          ref={imageRef}
-          src={img}
-          alt="Project Screenshot"
-          className="h-auto w-full object-cover transform transition-transform duration-[4s] ease-in-out max-h-400px"
-          onLoad={handleImageLoad} 
-        />
-        <style jsx>{`
-          .group:hover img {
-            transform: translateY(-${scrollDistance}px); // Dynamically scroll to the calculated distance
-          }
-        `}</style></>
-         } 
-        </div>
+        <div className={`h-[400px] overflow-hidden rounded-lg group cursor-pointer order-1 md:order-2`}>
+            {
+                img && <><img
+                ref={imageRef}
+                src={img}
+                alt="Project Screenshot"
+                className="h-auto w-full object-cover transform transition-transform duration-[4s] ease-in-out max-h-400px"
+                onLoad={handleImageLoad} 
+                />
+                <style jsx>{`
+                .group:hover img {
+                    transform: translateY(-${scrollDistance}px); 
+                }
+                `}</style></>
+            } 
+          </div>
+      
+
       </div>
       </div>
     </div>

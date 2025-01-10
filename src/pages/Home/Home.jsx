@@ -6,14 +6,20 @@ import Education from "./Education";
 import MySkills from "./MySkills";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import ProtfolioCarousel from "../Portfolio/ProtfolioCarousel";
+import { MdOutlineExplore } from "react-icons/md";
+import UcommingProject from "../../components/common/UcommingProject";
+import { useLoaderData } from "react-router";
+import ContactForm from "../../components/common/ContactForm";
+import { RiMailSendLine } from "react-icons/ri";
 
 const Home = () => {
     const [tabsBody, setTabsBody] = useState(0)
+    const {upcommingProject} = useLoaderData()
     return (
         <div>
             <Banner/>
             {/* About me section  */}
-            <section className="max-w-7xl mx-auto px-4 xl:px-0 my-24">
+            <section id="skill" className="max-w-7xl mx-auto px-4 xl:px-0 my-24">
                 <div className="text-center ">
                     <h4 className="text-lg text-primary my-3 mx-auto font-jost py-1 px-5 border-2 w-fit rounded-full border-gray-700">About me</h4>
                     <h2 className="text-4xl font-rubik text-white/85 font-semibold tracking-wide">Explorer the creativity & more</h2>
@@ -34,10 +40,10 @@ const Home = () => {
             </section>
 
             {/* Experience Section  */}
-            <section className="max-w-7xl mx-auto px-4 xl:px-0 my-24">
+            <section id="experience" className="max-w-7xl mx-auto px-4 xl:px-0 my-24">
                 
-                <h4 className="text-lg text-primary my-3 font-jost py-1 px-5 border-2 w-fit rounded-full border-gray-700">Experience</h4>
-                <h3 className="text-2xl md:text-3xl font-rubik font-medium my-4 text-white/65 flex items-center gap-2">
+                <h4 className="text-base text-primary my-3 font-jost py-1 px-5 border-2 w-fit rounded-full border-gray-700">Experience</h4>
+                <h3 className="text-2xl md:text-3xl font-raison font-medium my-4 text-white/75 flex items-center gap-2">
                     <svg aria-hidden="true" className="e-font-icon-svg e-fas-university" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#7cf03d" width={'36px'}><path d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"></path></svg>
                     My <span className="text-primary">Experience</span> Expedition
                 </h3>
@@ -73,11 +79,10 @@ const Home = () => {
             </section>
 
             {/* Project sectiono  */}
-            <section className="max-w-7xl mx-auto px-4 xl:px-0">
-            <h4 className="text-lg text-primary my-3 font-jost py-1 px-5 border-2 w-fit rounded-full border-gray-700">Project</h4>
-                <h3 className="text-2xl md:text-3xl font-rubik font-medium my-4 text-white/65 flex items-center gap-2">
+            <section id="project" className="max-w-7xl mx-auto px-4 xl:px-0">
+                <h4 className="text-base text-primary my-3 font-jost py-1 px-5 border-2 w-fit rounded-full border-gray-700">Project</h4>
+                <h3 className="text-2xl md:text-3xl font-raison font-medium my-4 text-white/75 flex items-center gap-2">
                     <AiOutlineFundProjectionScreen className="text-primary"/>
-                    {/* <svg aria-hidden="true" className="e-font-icon-svg e-fas-university" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#7cf03d" width={'36px'}><path d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"></path></svg> */}
                     Innovative Project <span className="text-primary">Portfolio</span>
                 </h3>
                 <p className="font-jost text-lg my-4 text-dark-black max-w-3xl">Discover a showcase of my innovative projects, reflecting my expertise in web development, creative problem-solving, and delivering impactful solutions that combine design and functionality seamlessly.</p>
@@ -87,9 +92,37 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* <section>
-                <ProjectCard/>
-            </section> */}
+            {/* Upcomming Project  */}
+            <section className="max-w-7xl mx-auto px-4 xl:px-0 my-24">
+                <div className="max-w-2xl ">
+                    <h4 className="text-base  text-primary my-3 font-jost py-1 px-5 border-2 w-fit rounded-full border-gray-700">Upcomming Project</h4>
+                    <h3 className="text-2xl md:text-3xl font-raison font-medium my-4 text-white/75 flex items-center gap-2">
+                        <MdOutlineExplore className="text-primary"/>
+                        What’s Coming Next
+                    </h3>
+                    <p className="font-jost text-lg my-4 text-dark-black max-w-3xl">Discover a showcase of my innovative projects, reflecting my expertise in web development, creative problem-solving, and delivering impactful solutions that combine design and functionality seamlessly.</p>
+                </div>
+                <div className="space-y-10">
+                    {
+                        upcommingProject?.map( (project, idx) =>  <UcommingProject key={idx} projectData={project} idx={idx}/>)
+                    }
+                </div>
+            </section>
+
+            {/* Contact section  */}
+            <section id="contact" className="max-w-7xl mx-auto px-4 xl:px-0 my-24">
+            <div className="max-w-2xl mx-auto text-center">
+                    <h4 className="text-base mx-auto text-center text-primary my-3 font-jost py-1 px-5 border-2 w-fit rounded-full border-gray-700">Contact</h4>
+                    <h3 className="text-2xl mx-auto text-center justify-center  md:text-3xl font-raison font-medium my-4 text-white/75 flex items-center gap-2">
+                        <RiMailSendLine className="text-primary"/>
+                        Get in Touch
+                    </h3>
+                    <p className="font-jost text-lg my-4 text-dark-black max-w-3xl">Feel free to drop me a message anytime. I’d love to hear your ideas, questions, or feedback!</p>
+                </div>
+                <div>
+                    <ContactForm/>
+                </div>
+            </section>
         </div>
     );
 };

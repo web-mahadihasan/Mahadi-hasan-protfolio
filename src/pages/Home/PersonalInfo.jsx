@@ -15,7 +15,7 @@ const PersonalInfo = () => {
                     <img className="absolute w-full h-full top-0 left-0 z-10 mix-blend-screen bg-[#2b323e] rounded-lg" src="https://triprex.b-cdn.net/wp-content/themes/triprex/assets/img/home2/home2-about-img-bg-vector.png" alt=""/>
                 </div>
                 <div className="flex-1">
-                    <h3 className="text-3xl font-medium font-rubik text-white/80">Personal Info</h3>
+                    <h3 className="text-3xl font-medium font-raison text-white/80">Personal Info</h3>
                     <p className="font-jost text-lg my-4 text-dark-black max-w-5xl mx-auto">As a professional <span className="text-primary">MERN Stack Developer</span>, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="p-4 bg-[#1f242d] rounded-md">
@@ -33,20 +33,7 @@ const PersonalInfo = () => {
                         <div className="p-4 bg-[#1f242d] rounded-md">
                             <p className="font-rubik text-lg text-dark-black">Github</p>
                             <a href="https://github.com/web-mahadihasan" target="blank" className="font-jost text-lg tracking-wide text-white/75">github.com/web-mahadihasan</a>
-                           {/* <div className="flex items-center gap-[10px] text-text ">
-                                 <a className="text-[1.2rem] p-1.5 cursor-pointer group rounded-full hover:text-white hover:bg-primary transition-all duration-300">
-                                     <BsLinkedin size={22} className=" group-hover:text-gray-100 "/>
-                                 </a>
-                                 <a className="text-[1.3rem] p-1.5 cursor-pointer group rounded-full hover:text-white hover:bg-primary  transition-all duration-300">
-                                     <BsGithub size={22} className="group-hover:text-gray-100"/>
-                                 </a>
-                                 <a className="text-[1.2rem] p-1.5 cursor-pointer group rounded-full hover:text-white hover:bg-primary transition-all duration-300">
-                                     <BsFacebook size={22} className=" group-hover:text-gray-100"/>
-                                 </a>
-                                 <a className="text-[1.2rem] group p-1.5 cursor-pointer rounded-full hover:text-white hover:bg-primary transition-all duration-300">
-                                     <BsTwitter size={22} className=" group-hover:text-gray-100 "/>
-                                 </a>
-                            </div> */}
+                          
                         </div>
                     </div>
                 </div>

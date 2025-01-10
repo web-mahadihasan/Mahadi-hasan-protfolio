@@ -9,7 +9,7 @@ const ProtfolioCarousel = () => {
   // const { slides, options } = props
   const options = {}
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
-  const allProject = useLoaderData()
+  const {allProject} = useLoaderData()
   
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
@@ -26,10 +26,10 @@ const ProtfolioCarousel = () => {
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container mt-6">
-          {allProject.map((project, idx) => (
+          {allProject?.map((project, idx) => (
             
             <div className="embla__slide" key={project._id}>
-              <div className="embla__slide__number"><ProjectCard key={project._id} projectData={project} idx={idx}/></div>
+              <div className="embla__slide__number min-h-[500px]"><ProjectCard key={project._id} projectData={project} idx={idx}/></div>
             </div>
           ))}
         </div>

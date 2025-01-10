@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 .font-rubik{
     font-family: "Rubik", serif;
 }
@@ -11,16 +14,7 @@
     color: #7cf03d;
     font-weight: 700;
 }
-/* .tabs a.active {
-    background: linear-gradient(to right, #7cf03d 0%, #7cf03d 100%);
-    background-size: 200% 100%;
-    background-position: left;
-    transition: background-position 0.5s ease-in-out;
-}
 
-.tabs a:hover {
-    background-position: right;
-} */
 .navlink:after{
     content: "";
     display: block;
