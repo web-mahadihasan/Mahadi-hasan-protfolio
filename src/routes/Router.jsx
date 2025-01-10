@@ -9,7 +9,8 @@ const Router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home/>
+                element: <Home/>,
+                loader: () =>  fetch("http://localhost:3000/portfolio-project")
             }
         ]
     }

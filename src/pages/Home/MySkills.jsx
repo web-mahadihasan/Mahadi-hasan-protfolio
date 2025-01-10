@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import SkillTopAnimation from "../../components/common/skillTopAnimation";
 import SkillCard from "../../components/common/SkillCard";
+import SkillCardAnimation from "../../components/common/SkillCardAnimation";
 // import react from "../../assets/icons/react.svg"
 
 const MySkills = () => {
@@ -33,7 +33,7 @@ const MySkills = () => {
 
             {/* Animation  */}
             <div className="">
-                <SkillTopAnimation/>
+                <SkillCardAnimation/>
             </div>
 
            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-16 justify-center place-items-center mt-8">

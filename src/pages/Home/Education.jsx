@@ -17,7 +17,7 @@ const Education = () => {
                     </h3>
                     <p className="text-lg mb-6 font-jost text-dark-black">A summary of my formal education and key experiences that have shaped my knowledge in technology and development, fueling my ongoing growth and passion for learning.</p>
                 </div>
-                <div className="max-w-5xl px-5 py-24 mx-auto flex flex-wrap">
+                <div className="max-w-7xl px-4 xl:px-0 my-12 mx-auto flex flex-wrap">
                     <div className=" w-full">
                     <div className="">
                         <div className="flex relative pb-12">
@@ -46,7 +46,7 @@ const Education = () => {
                             </ul>                        
                         </div>
                         </div>
-                        <div className="flex relative pb-12">
+                        <div className="flex relative">
                         <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                             <div className="h-full w-[2px] bg-gray-200 pointer-events-none"></div>
                         </div>

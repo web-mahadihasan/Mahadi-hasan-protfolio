@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        raison: ['RaisonneDemibold', 'sans-serif'], 
+      },
       colors: {
         primary: {
           light: 'rgb(224, 230, 247)',

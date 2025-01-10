@@ -132,3 +132,23 @@
   .experience-border-right{
     border-left: 1px solid rgba(197, 202, 213, .15);
   }
+  @keyframes shimmer {
+    0% {
+      background-position: -100% 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+  
+
+  .animate-shimmer {
+    animation: shimmer 5s cubic-bezier(0.6, 0.6, 0, 1) infinite;
+  }
+
+  .porfolioCarousel-shadow{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
