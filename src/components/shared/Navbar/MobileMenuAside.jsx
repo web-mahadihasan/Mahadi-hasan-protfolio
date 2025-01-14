@@ -14,12 +14,12 @@ const MobileMenuAside = ({setOpenMenu, openMenu}) => {
         { "path": "#contact", "element": "Contact" }
       ]
     return (
-        <div className={`absolute lg:hidden z-40 duration-700 min-h-screen ${ openMenu? "top-0 left-0 block" : "-left-[800px] top-0"}`}>
+        <div className={`absolute lg:hidden z-40 duration-700 min-h-[calc(100vh-50px)] ${ openMenu? "top-0 left-0 block" : "-left-[800px] top-0"}`}>
             <div className="menu flex flex-col justify-between bg-base-200 text-base-content min-h-screen w-80 p-4 overflow-y-scroll">
             {/* Sidebar content here */}
                 <div className="flex items-center justify-between mt-5">
                     <div className="flex items-center gap-2">
-                        <Link to={"/"}>Mahadi</Link>
+                        <Link to={"/"} className=" text-4xl font-bold font-rubik tracking-wider text-primary">Mahadi</Link>
                     </div>
                     {/* Menu Close  */}
                     <button onClick={() => setOpenMenu(false)} className="p-2 border border-black/65 cursor-pointer rounded-full">
