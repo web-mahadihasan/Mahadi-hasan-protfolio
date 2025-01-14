@@ -1,6 +1,7 @@
 import { FiDownload } from "react-icons/fi";
 import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { Link } from "react-router";
+import { Typewriter } from 'react-simple-typewriter'
 
 const Banner = () => {
     return (
@@ -8,9 +9,19 @@ const Banner = () => {
             <div className="max-w-7xl mx-auto px-4 xl:px-0 py-24 flex flex-col lg:flex-row items-center justify-between gap-8">
                 <div className="flex-1 order-2 lg:order-1">
                     <p className="text-2xl font-jost font-semibold">Hi 👋, I&apos;m Mahadi Hasan  </p>
-                    <h1 className="text-5xl md:text-6xl flex flex-col gap-2 font-extrabold font-rubik text-primary-black my-8">
-                        <span className="text-white">A Creative </span>
-                        <span style={{ WebkitTextStroke: '1px #7cf03d', color: 'transparent' }}>MERN Stack Developer</span>
+                    <h1 className=" flex flex-col gap-2 font-extrabold font-rubik text-primary-black my-8">
+                        <span className="text-4xl md:text-5xl text-white">A Creative </span>
+                        <span className="text-4xl md:text-5xl lg:text-4xl xl:text-5xl" style={{ WebkitTextStroke: '1px #7cf03d', color: 'transparent' }}>
+                        <Typewriter
+                            words={['MERN Stack Developer', 'Frontend Developer', 'React Js Developer', 'Web Developer']}
+                            loop={5}
+                            cursor
+                            cursorStyle='|'
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                        </span>
                     </h1>
                     <p className="font-jost text-xl my-4">A Creative Frontend Developer turning ideas into engaging digital experiences with style and precision. Let’s build something remarkable!</p>
                     <div className="flex items-center gap-6 my-6">
