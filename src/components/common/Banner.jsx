@@ -1,6 +1,5 @@
 import { FiDownload } from "react-icons/fi";
 import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { Link } from "react-router";
 import { Typewriter } from 'react-simple-typewriter'
 import { motion } from "framer-motion";
 
