@@ -48,7 +48,7 @@ const Banner = () => {
                     animate={{ opacity: 1, y: 0 }} 
                     transition={{delay:0.3, duration: 0.8, ease: "linear" }}
                     >
-                        {/* <button>Hire Me</button> */}
+                        
                         <button className="px-5 font-rubik tracking-wide py-2.5 text-sm bg-transparent border-primary text-primary  uppercase font-semibold rounded-full shadow-xl border hover:bg-primary hover:text-primary-black duration-500 ease-in-out flex items-center gap-2">Hire me <span></span></button>
                         <button onClick={handleDownload} className="px-5 box-shadow font-rubik tracking-wide py-2.5 text-sm bg-primary text-primary-black uppercase font-semibold rounded-full shadow-xl border border-primary hover:shadow-none focus:shadow-none duration-500 flex items-center gap-2">Download Resume <span><FiDownload size={16}/></span></button>
                     </motion.div>
