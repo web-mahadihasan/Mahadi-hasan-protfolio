@@ -1,8 +1,15 @@
 import { useEffect, useRef, useState } from "react";
+import { FaGraduationCap, FaTools, FaUser } from "react-icons/fa";
+import { Icon } from "@iconify/react";
 
 const Tabs = ({setTabsBody}) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const tabsRef = useRef([]);
+    const tabs = [
+      { name: "About", icon: "solar:user-bold-duotone" },
+      { name: "Education", icon: "mingcute:school-fill" },
+      { name: "Skill", icon: "material-symbols:build-circle" },
+    ];
 
   useEffect(() => {
     // Ensure the runner is correctly positioned and sized on initial render
@@ -24,20 +31,22 @@ const Tabs = ({setTabsBody}) => {
              <div
                  className="bg-runner"
              ></div>
-             {["About", "Education", "Skill"].map((tab, index) => (
-                 <a
-                 key={index}
-                 href="#"
-                 className={`tab font-jost text-dark-black tracking-wide ${activeIndex === index ? "active" : ""}`}
-                 onClick={(e) => {
-                     e.preventDefault();
-                     handleClick(index);
-                 }}
-                 ref={(el) => (tabsRef.current[index] = el)}
-                 >
-                 {tab}
-                 </a>
-             ))}
+             {tabs.map((tab, index) => (
+                <a
+                  key={index}
+                  href="#"
+                  className={`tab font-jost text-dark-black tracking-wide flex items-center gap-2 ${
+                    activeIndex === index ? "active" : ""
+                  }`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleClick(index);
+                  }}
+                  ref={(el) => (tabsRef.current[index] = el)}
+                >
+                  <Icon icon={tab.icon} className="text-xl text-dark-black" /> {tab.name}
+                </a>
+              ))}
          </div>
     );
 };

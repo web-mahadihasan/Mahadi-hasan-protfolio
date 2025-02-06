@@ -1,69 +1,79 @@
 import { useRef, useState } from "react";
 import { HiMiniArrowRight } from "react-icons/hi2";
 
-const UcommingProject = ({projectData, idx}) => {
-    const {name, des, img} = projectData || {}
+const UcommingProject = ({ projectData, idx }) => {
+  const { name, des, img } = projectData || {};
 
-      const imageRef = useRef(null);
-      const [scrollDistance, setScrollDistance] = useState(0);
-    
-    //   const color = '#4A8C44'
-      // Calculate scroll distance when the image is fully loaded
-      const handleImageLoad = () => {
-        const imageElement = imageRef.current;
-        if (imageElement) {
-          const imageHeight = imageElement.offsetHeight;
-          const containerHeight = 400; // container height we set
-          const distanceToScroll = imageHeight - containerHeight;
-    
-          // Scroll only if the image is taller than the container
-          setScrollDistance(distanceToScroll > 0 ? distanceToScroll : 0);
-        }
-      };
+  const imageRef = useRef(null);
+  const [scrollDistance, setScrollDistance] = useState(0);
 
-    return (
-       <div className="max-w-7xl mx-auto py-10 px-4 xl:px-0">
-             <div className=" "
-               >
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center h-full lg:max-h-[400px] rounded-lg ">
-                {/* Left side  */}
-             <div className={`h-[400px] overflow-hidden rounded-lg group cursor-pointer  ${idx ===  1 ? "order-1 lg:order-2" : "order-1 lg:order-1"}`}>
-             {
-                img && <><img
-                ref={imageRef}
-                src={img}
-                alt="Project Screenshot"
-                className="h-auto w-full object-cover transform transition-transform duration-[4s] ease-in-out max-h-400px"
-                onLoad={handleImageLoad} 
+  //   const color = '#4A8C44'
+  // Calculate scroll distance when the image is fully loaded
+  const handleImageLoad = () => {
+    const imageElement = imageRef.current;
+    if (imageElement) {
+      const imageHeight = imageElement.offsetHeight;
+      const containerHeight = 400; // container height we set
+      const distanceToScroll = imageHeight - containerHeight;
+
+      // Scroll only if the image is taller than the container
+      setScrollDistance(distanceToScroll > 0 ? distanceToScroll : 0);
+    }
+  };
+
+  return (
+    <div className="max-w-7xl mx-auto py-10 px-4 xl:px-0">
+      <div className=" ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center h-full lg:max-h-[400px] rounded-lg ">
+          {/* Left side  */}
+          <div
+            className={`h-[400px] overflow-hidden rounded-lg group cursor-pointer  ${
+              idx === 1 ? "order-1 lg:order-2" : "order-1 lg:order-1"
+            }`}
+          >
+            {img && (
+              <>
+                <img
+                  ref={imageRef}
+                  src={img}
+                  alt="Project Screenshot"
+                  className="h-auto w-full object-cover transform transition-transform duration-[4s] ease-in-out max-h-400px"
+                  onLoad={handleImageLoad}
                 />
                 <style jsx>{`
-                .group:hover img {
-                    transform: translateY(-${scrollDistance}px); 
-                }
-                `}</style></>
-                } 
-               </div>
+                  .group:hover img {
+                    transform: translateY(-${scrollDistance}px);
+                  }
+                `}</style>
+              </>
+            )}
+          </div>
 
-               {/* right Section */}
-               <div className={`space-y-6 md:ml-6 ${idx === 1 ? "order-2 lg:order-1" : "order-2 lg:order-2"}`}>
-                 <h1 className="text-6xl flex flex-col gap-2 font-semibold font-rubik text-primary-black my-8">
-                   {/* <span
+          {/* right Section */}
+          <div
+            className={`space-y-6 md:ml-6 ${
+              idx === 1 ? "order-2 lg:order-1" : "order-2 lg:order-2"
+            }`}
+          >
+            <h1 className="text-6xl flex flex-col gap-2 font-semibold font-rubik text-main-black my-8">
+              {/* <span
                      style={{ WebkitTextStroke: "1px #7cf03d", color: "transparent" }}
                      className="tracking-wider"
                    >
                      0{1}
                    </span> */}
-                 </h1>
-                 <h2 className="text-3xl lg:text-5xl font-bold bg-gradient-to-br from-white via-white/70 to-white/50 bg-clip-text text-transparent ">
-                   {name}
-                 </h2>
-                 <p className="text-lg font-normal text-dark-black font-jost">{des}</p>
-                 <div className="flex items-center gap-4">
-                   {/* <h4 className="text-lg font-medium font-jost">Tech Use:</h4> */}
-                   
-                 </div>
-                 <div className="flex items-center space-x-6">
-                   {/* <a
+            </h1>
+            <h2 className="text-3xl lg:text-5xl font-bold bg-gradient-to-br from-white via-white/70 to-white/50 bg-clip-text text-transparent ">
+              {name}
+            </h2>
+            <p className="text-lg font-normal text-dark-black font-jost">
+              {des}
+            </p>
+            <div className="flex items-center gap-4">
+              {/* <h4 className="text-lg font-medium font-jost">Tech Use:</h4> */}
+            </div>
+            <div className="flex items-center space-x-6">
+              {/* <a
                      
                      target="blank"
                      className="flex items-center justify-center bg-gray-800 text-green-400 rounded-full hover:bg-green-500 hover:text-white transition"
@@ -80,16 +90,20 @@ const UcommingProject = ({projectData, idx}) => {
                        </div>
                      </div>
                    </a> */}
-                    <button className="px-5 box-shadow font-rubik tracking-wide py-2.5 text-sm bg-primary text-primary-black uppercase font-semibold rounded-full shadow-xl border border-primary hover:shadow-none focus:shadow-none duration-500 flex items-center gap-2">View Details <span><HiMiniArrowRight size={16}/></span></button>
-                 </div>
-               </div>
-       
-               {/* Right Section (Image with Scroll on Hover) */}
-               
-             </div>
-             </div>
-           </div>
-    );
+              <button className="px-5 box-shadow font-rubik tracking-wide py-2.5 text-sm bg-main text-main-black uppercase font-semibold rounded-full shadow-xl border border-main hover:shadow-none focus:shadow-none duration-500 flex items-center gap-2">
+                View Details{" "}
+                <span>
+                  <HiMiniArrowRight size={16} />
+                </span>
+              </button>
+            </div>
+          </div>
+
+          {/* Right Section (Image with Scroll on Hover) */}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default UcommingProject;

@@ -1,26 +1,31 @@
 import { IoMdPaperPlane } from "react-icons/io";
 import { TbMailCode } from "react-icons/tb";
-import { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import axios from "axios";
 
 const ContactForm = () => {
   const form = useRef();
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   const validateEmail = async (email) => {
     try {
-      const response = await axios.get(`https://emailvalidation.abstractapi.com/v1/`, {
-        params: {
-          api_key: "ccc7c281b4a34a71985bd1ff80c9033a",
-          email: email,
+      const response = await axios.get(
+        `https://emailvalidation.abstractapi.com/v1/`,
+        {
+          params: {
+            api_key: "ccc7c281b4a34a71985bd1ff80c9033a",
+            email: email,
+          },
         }
-      });
+      );
       const data = response.data;
-      return data.is_valid_format.value && data.deliverability === "DELIVERABLE";
+      return (
+        data.is_valid_format.value && data.deliverability === "DELIVERABLE"
+      );
     } catch (error) {
       console.error("Error validating email:", error);
       return false;
@@ -34,7 +39,7 @@ const ContactForm = () => {
     const email = e.target.client_email.value.trim();
     const message = e.target.message.value.trim();
 
-    setLoading(true)
+    setLoading(true);
     // Validation checks
     if (!name || !email || !message) {
       Swal.fire({
@@ -64,7 +69,7 @@ const ContactForm = () => {
       });
       return;
     }
-   
+
     emailjs
       .sendForm(
         "service_tu6lx4v",
@@ -82,7 +87,7 @@ const ContactForm = () => {
           });
 
           e.target.reset();
-          setLoading(false)
+          setLoading(false);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -92,19 +97,18 @@ const ContactForm = () => {
             text: "Something went wrong. Please try again later.",
             draggable: true,
           });
-          setLoading(false)
+          setLoading(false);
         }
       );
-    
   };
-  
+
   return (
     <div className=" text-white py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Section */}
         <div className="w-full">
           <h1 className="text-3xl lg:text-3xl font-semibold mb-4 font-rubik text-white/80">
-          Let’s Collaborate to Build Something Extraordinary!
+            Let’s Collaborate to Build Something Extraordinary!
           </h1>
           <p className="text-dark-black text-base font-jost mb-6">
             Thanks for visiting! If you have any questions, ideas, or just want
@@ -114,12 +118,22 @@ const ContactForm = () => {
           </p>
           <div className="flex flex-col space-y-4">
             <div className="flex items-center gap-2">
-              <span className="text-lg"><IoMdPaperPlane size={28} className="text-white"/></span>
-              <span className="text-lg font-jost text-white/70"><a href="https://github.com/web-mahadihasan" target="blank">@web-mahadihasan</a></span>
+              <span className="text-lg">
+                <IoMdPaperPlane size={28} className="text-white" />
+              </span>
+              <span className="text-lg font-jost text-white/70">
+                <a href="https://github.com/web-mahadihasan" target="blank">
+                  @web-mahadihasan
+                </a>
+              </span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-lg"><TbMailCode size={24} className="text-white"/></span>
-              <span className="text-lg font-jost text-white/70">mehedihasanmilu7@gmail.com</span>
+              <span className="text-lg">
+                <TbMailCode size={24} className="text-white" />
+              </span>
+              <span className="text-lg font-jost text-white/70">
+                mehedihasanmilu7@gmail.com
+              </span>
             </div>
           </div>
         </div>
@@ -129,7 +143,10 @@ const ContactForm = () => {
           <form ref={form} onSubmit={sendEmail}>
             <div className="flex flex-col lg:flex-row gap-4 mb-4">
               <div className="flex-1">
-                <label htmlFor="firstName" className="block text-base mb-2 font-medium font-rubik text-white/80">
+                <label
+                  htmlFor="firstName"
+                  className="block text-base mb-2 font-medium font-rubik text-white/80"
+                >
                   First Name
                 </label>
                 <input
@@ -155,7 +172,10 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="email" className="block text-base mb-2 font-medium font-rubik text-white/80 ">
+              <label
+                htmlFor="email"
+                className="block text-base mb-2 font-medium font-rubik text-white/80 "
+              >
                 Email
               </label>
               <input
@@ -168,7 +188,10 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="message" className="block text-base mb-2 font-medium font-rubik text-white/80">
+              <label
+                htmlFor="message"
+                className="block text-base mb-2 font-medium font-rubik text-white/80"
+              >
                 Message
               </label>
               <textarea
@@ -181,12 +204,18 @@ const ContactForm = () => {
             </div>
 
             <button
-              type="submit" disabled={loading}
-              className="w-full py-2.5 bg-primary text-title-black font-semibold rounded font-jost"
+              type="submit"
+              disabled={loading}
+              className="w-full py-2.5 bg-main text-title-black font-semibold rounded font-jost"
             >
-              {
-                loading ? <span><span className="loading loading-spinner loading-sm mx-1"></span> Message sending!</span> : "Send Message"
-              }       
+              {loading ? (
+                <span>
+                  <span className="loading loading-spinner loading-sm mx-1"></span>{" "}
+                  Message sending!
+                </span>
+              ) : (
+                "Send Message"
+              )}
             </button>
           </form>
         </div>
