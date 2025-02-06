@@ -4,6 +4,12 @@ import { Link } from "react-router";
 import { Typewriter } from 'react-simple-typewriter'
 
 const Banner = () => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = "../../assets/Cv_of_Mahadi_Hasan.pdf";  
+        link.download = "Resume of Mahadi Hasan.pdf";  
+        link.click(); 
+      };
     return (
         <div className="bg-[#1f242d] dark:[#1f242d]">
             <div className="max-w-7xl mx-auto px-4 xl:px-0 py-24 flex flex-col lg:flex-row items-center justify-between gap-8">
@@ -27,7 +33,7 @@ const Banner = () => {
                     <div className="flex items-center gap-6 my-6">
                         {/* <button>Hire Me</button> */}
                         <button className="px-5 font-rubik tracking-wide py-2.5 text-sm bg-transparent border-primary text-primary  uppercase font-semibold rounded-full shadow-xl border hover:bg-primary hover:text-primary-black duration-500 ease-in-out flex items-center gap-2">Hire me <span></span></button>
-                        <Link to={"https://drive.google.com/file/d/1WReb-meGnzGYc-TwJLNVgltSdMIY8DzD/view?usp=sharing"} target="blank"><button className="px-5 box-shadow font-rubik tracking-wide py-2.5 text-sm bg-primary text-primary-black uppercase font-semibold rounded-full shadow-xl border border-primary hover:shadow-none focus:shadow-none duration-500 flex items-center gap-2">Download Resume <span><FiDownload size={16}/></span></button></Link>
+                        <button onClick={handleDownload} className="px-5 box-shadow font-rubik tracking-wide py-2.5 text-sm bg-primary text-primary-black uppercase font-semibold rounded-full shadow-xl border border-primary hover:shadow-none focus:shadow-none duration-500 flex items-center gap-2">Download Resume <span><FiDownload size={16}/></span></button>
                     </div>
                     <div className="flex items-center gap-[10px] text-text ">
                         <a href="https://www.linkedin.com/in/mahadihasan7/" target="blank" className="text-[1.2rem] p-1.5 cursor-pointer group rounded-full hover:text-white hover:bg-primary transition-all duration-300">

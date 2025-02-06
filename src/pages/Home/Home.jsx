@@ -123,6 +123,10 @@ const Home = () => {
                     <ContactForm/>
                 </div>
             </section>
+
+            <section>
+                
+            </section>
         </div>
     );
 };

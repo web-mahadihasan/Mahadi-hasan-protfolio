@@ -1,5 +1,7 @@
+import Lottie from "lottie-react";
 import { motion } from "motion/react";
 import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import about from "../../assets/image/about1.json"
 
 const PersonalInfo = () => {
     return (
@@ -11,8 +13,11 @@ const PersonalInfo = () => {
         className="bg-[#2b323e] p-8 rounded-lg shadow-lg backdrop-blur-2xl mt-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 min-h-[400px]">
                 <div className="flex-1 relative h-full" >
-                    <img src="https://i.ibb.co.com/cc6pX7b/banner-me.png" alt="" className="w-full max-h-[400px] object-cover z-40"/>
-                    <img className="absolute w-full h-full top-0 left-0 z-10 mix-blend-screen bg-[#2b323e] rounded-lg" src="https://triprex.b-cdn.net/wp-content/themes/triprex/assets/img/home2/home2-about-img-bg-vector.png" alt=""/>
+                    <div className="h-full overflow-hidden">
+                        <Lottie animationData={about} loop={true} className="h-full max-h-[400px] w-full object-cover scale-125"/>
+                    </div>
+                    {/* <img src="https://i.ibb.co.com/cc6pX7b/banner-me.png" alt="" className="w-full max-h-[400px] object-cover z-40"/>
+                    <img className="absolute w-full h-full top-0 left-0 z-10 mix-blend-screen bg-[#2b323e] rounded-lg" src="https://triprex.b-cdn.net/wp-content/themes/triprex/assets/img/home2/home2-about-img-bg-vector.png" alt=""/> */}
                 </div>
                 <div className="flex-1">
                     <h3 className="text-3xl font-medium font-raison text-white/80">Personal Info</h3>
