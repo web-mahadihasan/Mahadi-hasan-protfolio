@@ -10,7 +10,7 @@ const ProtfolioCarousel = () => {
   const options = {}
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
   const {allProject} = useLoaderData()
-  
+  console.log(allProject)  
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi)

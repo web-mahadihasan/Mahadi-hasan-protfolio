@@ -3,12 +3,13 @@ import { FaGithub } from "react-icons/fa";
 import { HiMiniArrowRight } from "react-icons/hi2";
 import "../../components/common/skill.css";
 import { div } from "framer-motion/client";
+import { Link } from "react-router";
 
 const ProjectCard = ({ projectData, idx }) => {
   const imageRef = useRef(null);
   const [scrollDistance, setScrollDistance] = useState(0);
 
-  const { name, des, img, liveLink, githubRepo, tech } = projectData || {};
+  const {_id, name, des, img, liveLink, githubRepo, tech } = projectData || {};
   const color = "#4A8C44";
   // Calculate scroll distance when the image is fully loaded
   const handleImageLoad = () => {
@@ -104,6 +105,7 @@ const ProjectCard = ({ projectData, idx }) => {
               >
                 <FaGithub size={20} />
               </a>
+              <Link to={`/project-details/${_id}`} className="text-base font-rubik px-4 py-1.5 border border-main rounded-full text-dark-black hover:text-main font-normal duration-300">Project Details</Link>
             </div>
           </div>
 

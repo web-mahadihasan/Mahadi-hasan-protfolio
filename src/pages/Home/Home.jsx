@@ -11,6 +11,7 @@ import UcommingProject from "../../components/common/UcommingProject";
 import { useLoaderData } from "react-router";
 import ContactForm from "../../components/common/ContactForm";
 import { RiMailSendLine } from "react-icons/ri";
+import UpcommingProjectParallax from "../../components/common/UpcommingProjectParallax/UpcommingProjectParallax";
 
 const Home = () => {
   const [tabsBody, setTabsBody] = useState(0);
@@ -125,7 +126,7 @@ const Home = () => {
       </section>
 
       {/* Project sectiono  */}
-      <section id="project" className="max-w-7xl mx-auto px-4 xl:px-0">
+      <section id="project" className="max-w-7xl mx-auto px-4 xl:px-0 h-full">
         <h4 className="text-base text-main my-3 font-jost py-1 px-5 border-2 w-fit rounded-full border-gray-700">
           Project
         </h4>
@@ -138,7 +139,7 @@ const Home = () => {
           in web development, creative problem-solving, and delivering impactful
           solutions that combine design and functionality seamlessly.
         </p>
-        <div>
+        <div className="">
           {/* <ProjectDisplay/> */}
           <ProtfolioCarousel />
         </div>
@@ -162,9 +163,10 @@ const Home = () => {
           </p>
         </div>
         <div className="space-y-10">
-          {upcommingProject?.map((project, idx) => (
+          {/* {upcommingProject?.map((project, idx) => (
             <UcommingProject key={idx} projectData={project} idx={idx} />
-          ))}
+          ))} */}
+          <UpcommingProjectParallax />
         </div>
       </section>
 

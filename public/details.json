@@ -1,0 +1,532 @@
+[
+    {   
+        "projectId": "67a5febddb5d4bbe0427702f",
+        "project": {
+          "name": "Fitverse",
+          "tagline": "A Comprehensive Fitness Tracking Platform",
+          "description": "A comprehensive fitness platform that transforms how you track, manage, and achieve your fitness goals.",
+          "links": {
+            "liveDemo": "https://fitverse-bd.web.app/",
+            "sourceCode": "https://github.com/web-mahadihasan/Fitverse-client"
+          },
+          "heroImage": "https://i.ibb.co.com/0pgZ7FVC/hero.png",
+          "backgroundImage": "https://i.ibb.co.com/XfXVnZFY/bg.png",
+          "techStack": [
+            {
+              "name": "React",
+              "icon": "Flame",
+              "description": "JavaScript library for building user interfaces"
+            },
+            {
+              "name": "MongoDB",
+              "icon": "Database",
+              "description": "NoSQL database for storing and managing data"
+            },
+            {
+              "name": "Express.js",
+              "icon": "Server",
+              "description": "Web application framework for Node.js"
+            },
+            {
+              "name": "Node.js",
+              "icon": "Cpu",
+              "description": "JavaScript runtime environment"
+            },
+            {
+              "name": "Firebase",
+              "icon": "Shield",
+              "description": "Platform for authentication and real-time database"
+            },
+            {
+              "name": "Framer Motion",
+              "icon": "Zap",
+              "description": "Motion library for React"
+            },
+            {
+              "name": "Lucide",
+              "icon": "Boxes",
+              "description": "Icon library"
+            },
+            {
+              "name": "React Query",
+              "icon": "RefreshCcw",
+              "description": "Data fetching library"
+            },
+            {
+              "name": "Stripe",
+              "icon": "DollarSign",
+              "description": "Payment processing platform"
+            }
+          ],
+          "features": [
+            {
+              "title": "User Profiles",
+              "icon": "Users",
+              "description": "Create detailed profiles to track your progress and achievements."
+            },
+            {
+              "title": "Secure Authentication",
+              "icon": "Shield",
+              "description": "Securely manage your account with robust authentication methods."
+            },
+            {
+              "title": "Workout Scheduling",
+              "icon": "Calendar",
+              "description": "Plan and schedule your workouts with ease."
+            },
+            {
+              "title": "Progress Tracking",
+              "icon": "MessageSquare",
+              "description": "Monitor your progress and stay motivated with detailed tracking."
+            },
+            {
+              "title": "Subscription Management",
+              "icon": "CreditCard",
+              "description": "Manage your subscriptions and billing information."
+            },
+            {
+              "title": "Data Visualization",
+              "icon": "BarChart",
+              "description": "Visualize your progress with interactive charts and graphs."
+            },
+            {
+              "title": "Achievements & Rewards",
+              "icon": "Award",
+              "description": "Unlock achievements and earn rewards for your hard work."
+            },
+            {
+              "title": "Customizable Dashboard",
+              "icon": "Layout",
+              "description": "Personalize your fitness journey with a tailored dashboard experience."
+            }
+          ],
+          "dashboards": [
+            {
+              "title": "User Dashboard",
+              "icon": "Users",
+              "description": "Track your fitness progress, schedule workouts, and manage your profile.",
+              "features": [
+                "Progress tracking",
+                "Workout scheduling",
+                "Personal achievements"
+              ]
+            },
+            {
+              "title": "Trainer Dashboard",
+              "icon": "Award",
+              "description": "Manage your clients, create workout plans, and track session schedules.",
+              "features": [
+                "Client management",
+                "Workout plan creation",
+                "Session scheduling"
+              ]
+            },
+            {
+              "title": "Admin Dashboard",
+              "icon": "Shield",
+              "description": "Oversee the entire platform, manage users, and analyze performance metrics.",
+              "features": [
+                "User management",
+                "Performance analytics",
+                "Content moderation"
+              ]
+            }
+          ],
+          "gallery": [
+            {
+              "image": "https://i.ibb.co.com/JWP9zvX4/preview1.png",
+              "title": "Home Page",
+              "description": "The central hub where users can explore fitness features, navigate through the platform, and access workout plans."
+            },
+            {
+              "image": "https://i.ibb.co.com/zTbMZVVc/preview2.png",
+              "title": "Trainer Page",
+              "description": "A dedicated page for fitness trainers to manage their profiles, view schedules, and interact with clients."
+            },
+            {
+              "image": "https://i.ibb.co.com/DD35xfQZ/preview3.png",
+              "title": "Classes Page",
+              "description": "Browse available fitness classes, view details, and sign up for sessions based on your fitness goals."
+            },
+            {
+              "image": "https://i.ibb.co.com/hJXBXv4h/preview4.png",
+              "title": "Forums Page",
+              "description": "Join community discussions, share fitness tips, and stay motivated by engaging with other fitness enthusiasts."
+            },
+            {
+              "image": "https://i.ibb.co.com/NfmGjZ8/preview5.png",
+              "title": "Trainer Dashboard",
+              "description": "A comprehensive dashboard for trainers to track their clients' progress, manage schedules, and offer personalized guidance."
+            },
+            {
+              "image": "https://i.ibb.co.com/HfbJ4stY/preview6.png",
+              "title": "User Dashboard",
+              "description": "A personalized dashboard for users to monitor their fitness journey, track progress, and manage workout plans."
+            }
+          ]
+        }
+      },
+      { 
+        "projectId": "67a5febddb5d4bbe04277030",
+        "project": {
+          "name": "Stay Rooms BD",
+          "tagline": "Effortless Hotel Room Booking Platform",
+          "description": "Stay Rooms BD is a user-friendly platform for seamless hotel room bookings, providing detailed room descriptions, secure booking management, and advanced search features.",
+          "links": {
+            "liveDemo": "https://stay-rooms-bd.web.app/",
+            "sourceCode": "https://github.com/web-mahadihasan/Stay-Rooms-bd"
+          },
+          "heroImage": "https://i.ibb.co.com/DHt8JNYg/hero-Image.png",
+          "backgroundImage": "https://i.ibb.co.com/jk7mpd6f/bg.png",
+          "techStack": [
+            {
+              "name": "React",
+              "icon": "Flame",
+              "description": "JavaScript library for building user interfaces"
+            },
+            {
+              "name": "Node.js",
+              "icon": "Cpu",
+              "description": "JavaScript runtime environment"
+            },
+            {
+              "name": "Express.js",
+              "icon": "Server",
+              "description": "Web application framework for Node.js"
+            },
+            {
+              "name": "MongoDB",
+              "icon": "Database",
+              "description": "NoSQL database for storing and managing data"
+            },
+            {
+              "name": "Firebase",
+              "icon": "Shield",
+              "description": "Platform for authentication and real-time database"
+            },
+            {
+              "name": "Framer Motion",
+              "icon": "Zap",
+              "description": "Motion library for React"
+            },
+            {
+              "name": "AOS Animation",
+              "icon": "Zap",
+              "description": "Animate on scroll effects"
+            },
+            {
+              "name": "JWT Authentication",
+              "icon": "Shield",
+              "description": "Secure authentication and user authorization"
+            },
+            {
+              "name": "Cloudinary",
+              "icon": "Cloud",
+              "description": "Image hosting and management"
+            }
+          ],
+          "features": [
+            {
+              "title": "Effortless Booking",
+              "icon": "CheckCircle",
+              "description": "Reserve hotel rooms in just a few clicks."
+            },
+            {
+              "title": "Comprehensive Room Details",
+              "icon": "FileText",
+              "description": "Access detailed descriptions, amenities, and images for every room."
+            },
+            {
+              "title": "Smart Sorting & Filtering",
+              "icon": "Filter",
+              "description": "Sort by price, rating, or filter rooms based on specific preferences."
+            },
+            {
+              "title": "Secure Booking Management",
+              "icon": "Shield",
+              "description": "Modify or cancel your bookings easily."
+            },
+            {
+              "title": "User Reviews",
+              "icon": "MessageSquare",
+              "description": "Share experiences and feedback about booked rooms."
+            },
+            {
+              "title": "Interactive Animations",
+              "icon": "Zap",
+              "description": "Smooth UI transitions with Framer Motion and AOS."
+            },
+            {
+              "title": "Mobile-Friendly Design",
+              "icon": "Smartphone",
+              "description": "Optimized for mobile, tablet, and desktop users."
+            }
+          ],
+            "gallery": [
+              {
+                "image": "https://i.ibb.co.com/N69V8DB7/preview1.png",
+                "title": "All Rooms",
+                "description": "Browse and explore all available rooms, each with detailed information and booking options."
+              },
+              {
+                "image": "https://i.ibb.co.com/Z124SQZ9/preview2.png",
+                "title": "Manage Booking",
+                "description": "Easily manage and modify your room bookings, including cancellations and changes to reservation details."
+              },
+              {
+                "image": "https://i.ibb.co.com/8n0cPVP7/preview3.png",
+                "title": "Room Details",
+                "description": "Detailed view of a specific room, including its amenities, photos, and pricing information."
+              }
+            ]          
+        }
+      },
+      {
+        "projectId": "67a5febddb5d4bbe04277031",
+        "project": {
+          "name": "Finest Trip",
+          "tagline": "Your Ultimate Visa Navigator Platform",
+          "description": "Finest Trip is a comprehensive visa navigator platform that simplifies the process of exploring, purchasing, and managing visas with secure authentication and advanced filtering options.",
+          "links": {
+            "liveDemo": "https://finest-trip.web.app/",
+            "sourceCode": "https://github.com/web-mahadihasan/Finest-Trip-Client"
+          },
+          "heroImage": "https://i.ibb.co.com/5WLtmXgY/hero.png",
+          "backgroundImage": "https://i.ibb.co.com/G3n0HNHF/bg.png",
+          "techStack": [
+            {
+              "name": "React",
+              "icon": "Flame",
+              "description": "JavaScript library for building user interfaces"
+            },
+            {
+              "name": "MongoDB",
+              "icon": "Database",
+              "description": "NoSQL database for managing visa-related data"
+            },
+            {
+              "name": "Express.js",
+              "icon": "Server",
+              "description": "Web application framework for backend operations"
+            },
+            {
+              "name": "Node.js",
+              "icon": "Cpu",
+              "description": "JavaScript runtime for backend development"
+            },
+            {
+              "name": "Firebase",
+              "icon": "Shield",
+              "description": "Platform for authentication and real-time updates"
+            },
+            {
+              "name": "Swiper.js",
+              "icon": "Sliders",
+              "description": "Smooth interactive animations for better user experience"
+            },
+            {
+              "name": "AOS Animation",
+              "icon": "Zap",
+              "description": "Scroll-based animations for engaging UI"
+            },
+            {
+              "name": "Tailwind CSS",
+              "icon": "Wind",
+              "description": "Utility-first CSS framework for modern UI design"
+            }
+          ],
+          "features": [
+            {
+              "title": "Visa Navigation",
+              "icon": "Map",
+              "description": "Explore a variety of visas with details, price, and category filters."
+            },
+            {
+              "title": "Visa Purchase",
+              "icon": "ShoppingCart",
+              "description": "Seamlessly purchase visas with a user-friendly interface."
+            },
+            {
+              "title": "Secure Authentication",
+              "icon": "Shield",
+              "description": "Login and register securely using Firebase authentication."
+            },
+            {
+              "title": "Manage Visas",
+              "icon": "Clipboard",
+              "description": "Add, update, and delete visas with real-time database integration."
+            },
+            {
+              "title": "Search & Filter",
+              "icon": "Filter",
+              "description": "Quickly find visas using price range and category filters."
+            },
+            {
+              "title": "Dynamic Database",
+              "icon": "Database",
+              "description": "Real-time updates stored efficiently in MongoDB."
+            },
+            {
+              "title": "Interactive Animations",
+              "icon": "Zap",
+              "description": "Smooth animations implemented with Swiper.js and AOS."
+            }
+          ],
+          "gallery": [
+                {
+                "image": "https://i.ibb.co.com/351MyXv1/preview1.png",
+                "title": "Lesson Page",
+                "description": "A comprehensive page where users can access and track their German language lessons, progress, and goals."
+                },
+                {
+                "image": "https://i.ibb.co.com/XZRpX9R0/preview2.png",
+                "title": "Vocabulary Page",
+                "description": "Enhance your German vocabulary with detailed word meanings, examples, and practice exercises."
+                },
+                {
+                "image": "https://i.ibb.co.com/s9gjDxK7/preview3.png",
+                "title": "Tutorial Page",
+                "description": "Learn German through high-quality video tutorials that cover grammar, pronunciation, and common phrases."
+                }
+            ]
+        }
+      },
+      {
+        "projectId": "67a5febddb5d4bbe04277032",
+        "project": {
+          "name": "Fluent Flow",
+          "tagline": "A Comprehensive German Language Learning Platform",
+          "description": "An interactive platform designed to help users master the German language with engaging video tutorials, vocabulary examples, and a user-friendly experience.",
+          "links": {
+            "liveDemo": "https://fluent-flow.netlify.app/",
+            "sourceCode": "https://github.com/web-mahadihasan/Fluent-Flow"
+          },
+          "heroImage": "https://i.ibb.co.com/XrZCmkFy/hero.png",
+          "backgroundImage": "https://i.ibb.co.com/3y9ykLQh/bg.png",
+          "techStack": [
+            {
+              "name": "React",
+              "icon": "Flame",
+              "description": "JavaScript library for building user interfaces"
+            },
+            {
+              "name": "Tailwind CSS",
+              "icon": "Brush",
+              "description": "Utility-first CSS framework for styling"
+            },
+            {
+              "name": "React Router",
+              "icon": "Map",
+              "description": "Library for handling client-side routing"
+            },
+            {
+              "name": "Context API",
+              "icon": "Database",
+              "description": "State management tool for React applications"
+            },
+            {
+              "name": "Firebase Authentication",
+              "icon": "Shield",
+              "description": "Secure authentication system for user login"
+            },
+            {
+              "name": "React Helmet",
+              "icon": "Globe",
+              "description": "Library for managing document head metadata"
+            },
+            {
+              "name": "Swiper JS",
+              "icon": "Sliders",
+              "description": "Library for interactive carousels and sliders"
+            },
+            {
+              "name": "Netlify",
+              "icon": "Cloud",
+              "description": "Deployment platform for fast and secure hosting"
+            }
+          ],
+          "features": [
+            {
+              "title": "User Authentication",
+              "icon": "Shield",
+              "description": "Log in securely using email or Google authentication."
+            },
+            {
+              "title": "Profile Management",
+              "icon": "User",
+              "description": "Update and manage user profile settings."
+            },
+            {
+              "title": "Personalized Dashboard",
+              "icon": "Layout",
+              "description": "Access user-specific content and learning progress."
+            },
+            {
+              "title": "Video Tutorials",
+              "icon": "Play",
+              "description": "High-quality videos for immersive language learning."
+            },
+            {
+              "title": "Vocabulary Enhancement",
+              "icon": "Book",
+              "description": "Learn new words with examples and meanings."
+            },
+            {
+              "title": "Interactive UI",
+              "icon": "Zap",
+              "description": "Smooth and intuitive interface for a seamless experience."
+            },
+            {
+              "title": "Dark Mode Support",
+              "icon": "Moon",
+              "description": "Comfortable viewing experience in low-light conditions."
+            },
+            {
+              "title": "Progress Tracker",
+              "icon": "BarChart",
+              "description": "Monitor language learning milestones and achievements."
+            }
+          ],
+          "dashboards": [
+            {
+              "title": "User Dashboard",
+              "icon": "Users",
+              "description": "Track progress, manage profile, and access personalized learning resources.",
+              "features": [
+                "Progress tracking",
+                "Vocabulary practice",
+                "Video tutorial library"
+              ]
+            },
+            {
+              "title": "Admin Dashboard",
+              "icon": "Shield",
+              "description": "Manage users, monitor content, and oversee platform analytics.",
+              "features": [
+                "User management",
+                "Content moderation",
+                "Performance analytics"
+              ]
+            }
+          ],
+          "gallery": [
+            {
+              "image": "/placeholder.svg?height=400&width=600",
+              "title": "Learning Dashboard",
+              "description": "User dashboard featuring progress tracking and learning resources."
+            },
+            {
+              "image": "/placeholder.svg?height=400&width=600",
+              "title": "Video Tutorials",
+              "description": "High-quality video tutorials for German language learning."
+            },
+            {
+              "image": "/placeholder.svg?height=400&width=600",
+              "title": "Vocabulary Enhancement",
+              "description": "Detailed word meanings and examples."
+            }
+          ]
+        }
+      }
+                  
+]
